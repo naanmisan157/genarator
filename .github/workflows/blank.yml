@@ -1,4 +1,4 @@
-name: genarator3
+name: genarator
 
 on: workflow_dispatch
 
@@ -6,8 +6,6 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 600
-
     steps:
     - name: command 1
       run: |
